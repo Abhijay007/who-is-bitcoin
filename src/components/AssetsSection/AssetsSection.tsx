@@ -600,7 +600,7 @@ const AssetsSection: React.FC = () => {
           if (pngResponse.ok) {
             const pngBlob = await pngResponse.blob();
             const fileName = asset.src.split('/').pop();
-            zip.file(`${fileName}.png`, pngBlob);
+            zip.file(`PNGs/${fileName}.png`, pngBlob);
           }
 
           // Download SVG version
@@ -608,7 +608,7 @@ const AssetsSection: React.FC = () => {
           if (svgResponse.ok) {
             const svgBlob = await svgResponse.blob();
             const fileName = asset.src.split('/').pop();
-            zip.file(`${fileName}.svg`, svgBlob);
+            zip.file(`SVGs/${fileName}.svg`, svgBlob);
           }
         } catch (error) {
           console.warn(`Failed to download ${asset.src}:`, error);
