@@ -1,7 +1,10 @@
 "use client";
 
 import { Box, Flex, Text, Center, Heading } from "@chakra-ui/react";
+import { useState } from "react";
+import JSZip from "jszip";
 import Asset from "./Asset";
+import CustomButton from "../CustomButton/CustomButton";
 
 interface AssetItem {
   src: string;
@@ -583,6 +586,54 @@ const downloadableAssets = [
   }
 ];
 const AssetsSection: React.FC = () => {
+  const [isDownloading, setIsDownloading] = useState(false);
+
+  const downloadAllAssets = async () => {
+    setIsDownloading(true);
+    const zip = new JSZip();
+
+    try {
+      const downloadPromises = downloadableAssets.map(async (asset) => {
+        try {
+          // Download PNG version
+          const pngResponse = await fetch(`${asset.src}.png`);
+          if (pngResponse.ok) {
+            const pngBlob = await pngResponse.blob();
+            const fileName = asset.src.split('/').pop();
+            zip.file(`PNGs/${fileName}.png`, pngBlob);
+          }
+
+          // Download SVG version
+          const svgResponse = await fetch(`${asset.src}.svg`);
+          if (svgResponse.ok) {
+            const svgBlob = await svgResponse.blob();
+            const fileName = asset.src.split('/').pop();
+            zip.file(`SVGs/${fileName}.svg`, svgBlob);
+          }
+        } catch (error) {
+          console.warn(`Failed to download ${asset.src}:`, error);
+        }
+      });
+
+      await Promise.all(downloadPromises);
+
+      // Generate and download the zip file
+      const zipBlob = await zip.generateAsync({ type: "blob" });
+      const url = URL.createObjectURL(zipBlob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'bitcoin-illustrations.zip';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error('Error creating zip file:', error);
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+
   return (
     <>
       <Heading
@@ -609,6 +660,21 @@ const AssetsSection: React.FC = () => {
         >
           Need a heavily caricatured bitcoin for your open-source project, conference keynote, or frightening cardboard cutout that lives in your attic? Grab a PNG and have at it. It’s all open-source and license-free. Have An idea for a Bitcoin you’d like to see here? We’re listening... and so is he.
         </Text>
+      </Center>
+
+      <Center mb={6}>
+        <CustomButton
+          bg="#f7931a"
+          color="white"
+          hoverBackgroundColor="#e6851a"
+          hoverTextColor="white"
+          fontSize="32px"
+          padding="1.7rem 1.5rem"
+          onClick={downloadAllAssets}
+          disabled={isDownloading}
+        >
+          {isDownloading ? "Downloading..." : "Download All"}
+        </CustomButton>
       </Center>
 
       <Box display="flex" justifyContent="center" mb={14}>
