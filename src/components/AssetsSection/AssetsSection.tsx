@@ -583,6 +583,86 @@ const downloadableAssets = [
   {
     src: "/assets/HereComesBitcoinAssets/maidcafebitcoin",
     alt: "maid cafe bitcoin"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Anti-credit card cat",
+    alt: "anti-credit card cat"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Banker attack",
+    alt: "banker attack"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Bitcoin faucet",
+    alt: "bitcoin faucet"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Confused cat",
+    alt: "confused cat"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Couch dweller",
+    alt: "couch dweller"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Eldritch meow",
+    alt: "eldritch meow"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Fishin for gold",
+    alt: "fishin for gold"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Genius cat",
+    alt: "genius cat"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Gift",
+    alt: "gift"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Greetings cat",
+    alt: "greetings cat"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Hooray cat",
+    alt: "hooray cat"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/In-person discourse",
+    alt: "in-person discourse"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Keyboard cat",
+    alt: "keyboard cat"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Kitty bitties",
+    alt: "kitty bitties"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Meow cheeks",
+    alt: "meow cheeks"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Online discourse",
+    alt: "online discourse"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Panic at the meow",
+    alt: "panic at the meow"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Prrrroto cat",
+    alt: "prrrroto cat"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Register cat",
+    alt: "register cat"
+  },
+  {
+    src: "/assets/HereComesBitcoinAssets/Solar powered meow",
+    alt: "solar powered meow"
   }
 ];
 const AssetsSection: React.FC = () => {
