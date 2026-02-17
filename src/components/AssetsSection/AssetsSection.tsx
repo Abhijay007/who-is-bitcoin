@@ -585,35 +585,35 @@ const downloadableAssets = [
     alt: "maid cafe bitcoin"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Anti-credit card cat",
+    src: "/assets/HereComesBitcoinAssets/Anti-credit-card-cat",
     alt: "anti-credit card cat"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Banker attack",
+    src: "/assets/HereComesBitcoinAssets/Banker-attack",
     alt: "banker attack"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Bitcoin faucet",
+    src: "/assets/HereComesBitcoinAssets/Bitcoin-faucet",
     alt: "bitcoin faucet"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Confused cat",
+    src: "/assets/HereComesBitcoinAssets/Confused-cat",
     alt: "confused cat"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Couch dweller",
+    src: "/assets/HereComesBitcoinAssets/Couch-dweller",
     alt: "couch dweller"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Eldritch meow",
+    src: "/assets/HereComesBitcoinAssets/Eldritch-meow",
     alt: "eldritch meow"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Fishin for gold",
+    src: "/assets/HereComesBitcoinAssets/Fishin-for-gold",
     alt: "fishin for gold"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Genius cat",
+    src: "/assets/HereComesBitcoinAssets/Genius-cat",
     alt: "genius cat"
   },
   {
@@ -621,47 +621,47 @@ const downloadableAssets = [
     alt: "gift"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Greetings cat",
+    src: "/assets/HereComesBitcoinAssets/Greetings-cat",
     alt: "greetings cat"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Hooray cat",
+    src: "/assets/HereComesBitcoinAssets/Hooray-cat",
     alt: "hooray cat"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/In-person discourse",
+    src: "/assets/HereComesBitcoinAssets/In-person-discourse",
     alt: "in-person discourse"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Keyboard cat",
+    src: "/assets/HereComesBitcoinAssets/Keyboard-cat",
     alt: "keyboard cat"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Kitty bitties",
+    src: "/assets/HereComesBitcoinAssets/Kitty-bitties",
     alt: "kitty bitties"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Meow cheeks",
+    src: "/assets/HereComesBitcoinAssets/Meow-cheeks",
     alt: "meow cheeks"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Online discourse",
+    src: "/assets/HereComesBitcoinAssets/Online-discourse",
     alt: "online discourse"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Panic at the meow",
+    src: "/assets/HereComesBitcoinAssets/Panic-at-the-meow",
     alt: "panic at the meow"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Prrrroto cat",
+    src: "/assets/HereComesBitcoinAssets/Prrrroto-cat",
     alt: "prrrroto cat"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Register cat",
+    src: "/assets/HereComesBitcoinAssets/Register-cat",
     alt: "register cat"
   },
   {
-    src: "/assets/HereComesBitcoinAssets/Solar powered meow",
+    src: "/assets/HereComesBitcoinAssets/Solar-powered-meow",
     alt: "solar powered meow"
   }
 ];
