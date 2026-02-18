@@ -652,10 +652,10 @@ const downloadableAssets = [
     src: "/assets/HereComesBitcoinAssets/Panic-at-the-meow",
     alt: "panic at the meow"
   },
-  {
-    src: "/assets/HereComesBitcoinAssets/Prrrroto-cat",
-    alt: "prrrroto cat"
-  },
+  // {
+  //   src: "/assets/HereComesBitcoinAssets/Prrrroto-cat",
+  //   alt: "prrrroto cat"
+  // },
   {
     src: "/assets/HereComesBitcoinAssets/Register-cat",
     alt: "register cat"
